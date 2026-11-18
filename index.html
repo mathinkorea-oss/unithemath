@@ -51,7 +51,7 @@
         <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
           <ul class="nav-list">
             <li><a href="#hero" class="nav-link">Home</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#projects" class="nav-link">수업</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
@@ -100,71 +100,197 @@
       <section
         class="section projects"
         id="projects"
-        aria-labelledby="projects-title"
+        aria-labelledby="classes-title"
       >
         <div class="container">
-          <header class="section-header">
-            <h2 class="section-title" id="projects-title">Selected Work</h2>
-            <p class="section-desc">
-              최근에 작업한 프로젝트입니다. 각 카드를 클릭하면 상세를 볼 수
-              있습니다.
-            </p>
+          <header class="section-header section-header--compact">
+            <h2 class="section-title" id="classes-title">유니더수학의 수업</h2>
           </header>
 
           <div class="project-grid">
-            <article class="project-card" tabindex="0">
-              <div class="project-card-visual project-card-visual--one">
-                <span class="project-tag">Web App</span>
+            <article class="project-card project-card--info">
+              <div class="project-card-visual">
+                <img
+                  src="assets/class-card-director.jpg"
+                  alt="중학교 수학 교과서와 고등학교 고급수학·심화수학 인정도서 표지가 나란히 놓인 모습"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
               <div class="project-card-body">
-                <h3 class="project-name">FlowDash</h3>
+                <h3 class="project-name">수학교육학 박사가 설계하는 수업</h3>
                 <p class="project-summary">
-                  실시간 협업 대시보드. 차트와 필터를 바닐라 JS로 구현하고
-                  모바일 퍼스트 레이아웃을 적용했습니다.
+                  고등학교에서 약 27년간 수학을 가르쳤습니다. 교과서 집필과
+                  수능 출제·검토 경험을 바탕으로, 학생이 어떤 개념에서
+                  막히는지 살피고 스스로 풀이를 설명할 수 있도록 지도합니다.
                 </p>
-                <ul class="project-stack" aria-label="사용 기술">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                </ul>
+                <a
+                  href="#director-profile"
+                  class="project-card-link"
+                  >원장 약력 보기 →</a
+                >
               </div>
             </article>
 
-            <article class="project-card" tabindex="0">
-              <div class="project-card-visual project-card-visual--two">
-                <span class="project-tag">Landing</span>
+            <article class="project-card project-card--static">
+              <div class="project-card-visual">
+                <img
+                  src="assets/class-card-textbook.jpg"
+                  alt="펼친 책과 필기 노트, 펜이 놓인 학습 책상(인물 없음)"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
               <div class="project-card-body">
-                <h3 class="project-name">Lumen Studio</h3>
+                <h3 class="project-name">교과서에서 시작하는 수학</h3>
                 <p class="project-summary">
-                  크리에이티브 에이전시 랜딩 페이지. 스크롤 기반 모션과
-                  다크 모드 토큰 시스템으로 브랜드 무드를 표현했습니다.
+                  교과서의 개념을 자기 말로 설명하고, 문제를 풀 때 어떤
+                  개념을 왜 쓰는지 확인합니다.
                 </p>
-                <ul class="project-stack" aria-label="사용 기술">
-                  <li>CSS Grid</li>
-                  <li>GSAP-free motion</li>
-                  <li>a11y</li>
-                </ul>
               </div>
             </article>
 
-            <article class="project-card" tabindex="0">
-              <div class="project-card-visual project-card-visual--three">
-                <span class="project-tag">Open Source</span>
+            <article class="project-card project-card--static">
+              <div class="project-card-visual">
+                <img
+                  src="assets/class-card-growth.jpg"
+                  alt="체크리스트 노트에 손으로 완료 표시를 하는 모습(얼굴·이름 미노출)"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
               <div class="project-card-body">
-                <h3 class="project-name">FormKit Lite</h3>
+                <h3 class="project-name">꿈을 향해, 오늘 한 걸음</h3>
                 <p class="project-summary">
-                  경량 폼 검증 라이브러리. 의존성 없이 DOM API만 사용하며
-                  Contact 폼에도 동일 패턴을 적용했습니다.
+                  어려웠던 문제를 다시 풀고 스스로 해결하는 경험을 쌓습니다.
+                  그 경험이 다음 목표에 도전할 자신감으로 이어집니다.
                 </p>
-                <ul class="project-stack" aria-label="사용 기술">
-                  <li>Vanilla JS</li>
-                  <li>ARIA</li>
-                  <li>i18n</li>
-                </ul>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section director-profile"
+        id="director-profile"
+        aria-labelledby="director-title"
+      >
+        <div class="container director-profile-layout">
+          <header class="director-profile-header">
+            <h2 class="section-title" id="director-title">
+              유니더수학 원장 소개
+            </h2>
+          </header>
+
+          <div class="director-profile-content">
+            <p>
+              안녕하세요. 유니더수학 원장입니다. 고등학교에서 약 27년간 수학을
+              가르쳤고, 수학교육을 연구하며 교과서 집필과
+              대학수학능력시험 출제·검토에 참여했습니다. 학교와 연구 현장에서
+              쌓은 경험은 지금 유니더수학의 수업을 설계하는 바탕이 되었습니다.
+            </p>
+            <p>
+              학생이 문제 앞에서 멈추면 먼저 어디까지 이해했는지 살핍니다.
+              개념이 헷갈리는 학생과 개념은 알지만 문제의 조건을 식으로
+              옮기기 어려운 학생에게는 서로 다른 설명이 필요합니다. 막힌
+              지점을 함께 찾고, 이해한 내용을 자기 말로 설명한 뒤 다시 풀어
+              보게 합니다.
+            </p>
+            <p>
+              한 번 막혔던 문제를 스스로 해결하는 경험은 다음 문제에 도전할
+              자신감으로 이어집니다. 유니더수학에서는 학생들이 그런 경험을
+              쌓도록 지도합니다.
+            </p>
+
+            <h3 class="director-subtitle">주요 약력</h3>
+            <ul class="director-list">
+              <li class="director-career-item">
+                <strong class="director-career-label">학위·교직</strong>
+                <div class="director-career-detail">
+                  <span>수학교육학 박사</span>
+                  <span>전 고등학교 수학교사(약 27년)</span>
+                </div>
+              </li>
+              <li class="director-career-item">
+                <strong class="director-career-label">출제·평가</strong>
+                <div class="director-career-detail">
+                  <span>대학수학능력시험 출제위원</span>
+                  <span>EBS 수능특강·수능완성 감수위원</span>
+                  <span>경기도교육청 전국연합학력평가 출제위원</span>
+                </div>
+              </li>
+              <li class="director-career-item">
+                <strong class="director-career-label">교과서 집필</strong>
+                <div class="director-career-detail">
+                  <span
+                    >중학교 수학 교과서 및 교사용 지도서(2007 개정
+                    교육과정, 새롬교육)</span
+                  >
+                  <span
+                    >중학교 수학 교과서 및 교사용 지도서(2009 개정
+                    교육과정, 좋은책신사고)</span
+                  >
+                  <span
+                    >고등학교 인정도서 《고급수학 II》·《심화수학 II》(2015
+                    개정 교육과정, 전라북도교육청)</span
+                  >
+                </div>
+              </li>
+              <li class="director-career-item">
+                <strong class="director-career-label">교사 연수·자문</strong>
+                <div class="director-career-detail">
+                  <span
+                    >수학 1급 정교사 자격연수 강사(경기도 교육청,
+                    충청남도교육청)</span
+                  >
+                  <span
+                    >수학 평가 문항 개발 연수 강사(경기도 교육청, 울산광역시
+                    교육청, 광주광역시 교육청)</span
+                  >
+                  <span>한국과학창의재단 수학교육 자문위원 등</span>
+                </div>
+              </li>
+              <li class="director-career-item">
+                <strong class="director-career-label">학술 연구</strong>
+                <div class="director-career-detail">
+                  <span>한국학교수학회 연구이사</span>
+                  <span
+                    >수학 자기조절 학습·좋은 수학 수업·수학 불안 등 연구</span
+                  >
+                </div>
+              </li>
+              <li class="director-career-item">
+                <strong class="director-career-label">수상</strong>
+                <div class="director-career-detail">
+                  <span>교육부 장관상</span>
+                  <span>경기도교육감 표창 7회</span>
+                  <span>대한수학교육학회 최우수상 등 다수</span>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="director-subtitle">대표 연구</h3>
+            <ul class="director-list director-list--research">
+              <li>
+                「고등학생의 수학 자기조절 학습 요인에 대한 집단별 수준 차이
+                비교」, 한국수학사학회지(2021)
+              </li>
+              <li>
+                「일대다 튜토링 수학 협동학습이 고등학생의 인지적·정의적
+                영역에 미치는 영향」, 수학교육 논문집(2020)
+              </li>
+              <li>
+                「고등학교 수학 교사가 학생 지도에서 겪는 어려움」,
+                한국학교수학회논문집(2019)
+              </li>
+            </ul>
           </div>
         </div>
       </section>

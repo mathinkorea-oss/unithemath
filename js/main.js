@@ -46,7 +46,7 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  const sections = ["hero", "projects", "contact"]
+  const sections = ["hero", "projects", "director-profile", "contact"]
     .map(function (id) {
       return document.getElementById(id);
     })
@@ -142,16 +142,4 @@
     });
   }
 
-  const projectCards = document.querySelectorAll(".project-card");
-  projectCards.forEach(function (card) {
-    card.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        card.classList.add("is-pressed");
-        setTimeout(function () {
-          card.classList.remove("is-pressed");
-        }, 150);
-      }
-    });
-  });
 })();
