@@ -6,12 +6,6 @@
   const siteNav = document.querySelector(".site-nav");
   const navLinks = document.querySelectorAll(".nav-link");
   const form = document.getElementById("contact-form");
-  const yearEl = document.getElementById("year");
-
-  if (yearEl) {
-    yearEl.textContent = String(new Date().getFullYear());
-  }
-
   function setNavOpen(open) {
     if (!navToggle || !siteNav) return;
     navToggle.setAttribute("aria-expanded", open ? "true" : "false");

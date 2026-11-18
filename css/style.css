@@ -752,9 +752,35 @@ a:hover {
 .footer-copy {
   grid-column: 1 / -1;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
   text-align: center;
+}
+
+.footer-line {
+  margin: 0 0 0.45rem;
+  line-height: 1.65;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.footer-line:last-child {
+  margin-bottom: 0;
+}
+
+.footer-line a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-line a:hover {
+  color: var(--accent);
+}
+
+.footer-line--copy {
+  margin-top: 0.65rem;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .footer-top {
